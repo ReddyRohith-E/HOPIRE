@@ -46,7 +46,7 @@ const ClientTestimonials = () => {
 
   const testimonialStyles = {
     container: {
-      backgroundColor: '#001440',
+      backgroundColor: 'var(--primary-color)',
       width: '100%',
       padding: '48px 16px',
       boxSizing: 'border-box'
@@ -56,7 +56,7 @@ const ClientTestimonials = () => {
       margin: '0 auto'
     },
     heading: {
-      color: '#00E5FF',
+      color: 'var(--secondary-color)',
       fontSize: '32px',
       fontWeight: 'bold',
       textAlign: 'center',
@@ -74,7 +74,7 @@ const ClientTestimonials = () => {
       display: isMobile ? 'block' : 'none'
     },
     testimonialCard: {
-      backgroundColor: '#E6FAFF',
+      backgroundColor: 'var(--tertiary-color)',
       borderRadius: '8px',
       padding: '32px',
       display: 'flex',
@@ -84,7 +84,7 @@ const ClientTestimonials = () => {
       boxSizing: 'border-box'
     },
     mobileCard: {
-      backgroundColor: '#E6FAFF',
+      backgroundColor: 'var(--tertiary-color)',
       borderRadius: '8px',
       padding: '24px',
       marginBottom: '16px'
@@ -92,14 +92,14 @@ const ClientTestimonials = () => {
     profileImage: {
       width: '96px',
       height: '96px',
-      backgroundColor: '#D0D0D0',
+      backgroundColor: 'var(--quaternary-color)',
       borderRadius: '50%',
       flexShrink: 0
     },
     mobileProfileImage: {
       width: '80px',
       height: '80px',
-      backgroundColor: '#D0D0D0',
+      backgroundColor: 'var(--quaternary-color)',
       borderRadius: '50%',
       margin: '0 auto 16px auto'
     },
@@ -120,7 +120,7 @@ const ClientTestimonials = () => {
       marginBottom: '16px'
     },
     content: {
-      color: '#333',
+      color: 'var(--dark-color)',
       marginBottom: '16px',
       fontSize: '14px'
     },
@@ -157,7 +157,7 @@ const ClientTestimonials = () => {
       cursor: 'pointer'
     },
     activeDot: {
-      backgroundColor: '#00E5FF'
+      backgroundColor: 'var(--secondary-color)'
     },
     navButtons: {
       display: 'flex',
@@ -166,8 +166,8 @@ const ClientTestimonials = () => {
       gap: '16px'
     },
     navButton: {
-      backgroundColor: '#00E5FF',
-      color: '#001440',
+      backgroundColor: 'var(--secondary-color)',
+      color: 'var(--primary-color)',
       width: '40px',
       height: '40px',
       borderRadius: '50%',

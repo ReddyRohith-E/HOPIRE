@@ -1,10 +1,19 @@
 /* Footer.css */
+:root {
+    --primary-color: #001136;
+    --secondary-color: #00EAFA;
+    --tertiary-color: #d4f2f4;
+    --quaternary-color: #142169;
+    --dark-color: #000;
+    --font-color: #fff;
+}
+
 .footer {
     width: 100%;
-    background-color: #031d41; /* Dark Blue */
-    color: #ffffff; /* White Text */
+    background-color: var(--primary-color); /* Dark Blue */
+    color: var(--font-color); /* White Text */
     padding: 3rem 1.5rem;
-    border-top: 2px solid #03d9f0; /* Aqua Line */
+    border-top: 2px solid var(--secondary-color); /* Aqua Line */
     font-family: 'Arial', sans-serif;
 }
 
@@ -30,12 +39,12 @@
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: var(--font-color);
 }
 
 .header-section p {
     font-size: 1rem;
-    color: #c5d3e0; /* Lighter text */
+    color: var(--tertiary-color); /* Lighter text */
 }
 
 .contact-grid {
@@ -57,12 +66,12 @@
 }
 
 .contact-item:hover {
-    color: #03d9f0; /* Aqua Hover */
+    color: var(--secondary-color); /* Aqua Hover */
 }
 
 .contact-item svg {
     font-size: 1.3rem;
-    color: #03d9f0; /* Aqua Icons */
+    color: var(--secondary-color); /* Aqua Icons */
 }
 
 .nav-social {
@@ -82,7 +91,7 @@
 }
 
 .navigation a {
-    color: #ffffff;
+    color: var(--font-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -90,7 +99,7 @@
 }
 
 .navigation a:hover {
-    color: #03d9f0; /* Aqua Hover */
+    color: var(--secondary-color); /* Aqua Hover */
 }
 
 .social-media {
@@ -102,24 +111,24 @@
 
 .social-media span {
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--font-color);
     font-weight: bold;
 }
 
 .social-media a {
-    color: #ffffff;
+    color: var(--font-color);
     font-size: 1.3rem;
     transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-    color: #03d9f0; /* Aqua Hover */
+    color: var(--secondary-color); /* Aqua Hover */
 }
 
 .copyright {
     text-align: center;
     font-size: 0.85rem;
-    color: #c5d3e0; /* Lighter text */
+    color: var(--tertiary-color); /* Lighter text */
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
