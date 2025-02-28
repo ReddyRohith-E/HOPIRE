@@ -16,6 +16,9 @@ createRoot(document.getElementById("root")).render(
       <div id="home">
         <Hero />
       </div>
+      <div id="about">
+        <AboutUs />
+      </div>
       <div id="portfolio">
         <Portfolio />
       </div>
