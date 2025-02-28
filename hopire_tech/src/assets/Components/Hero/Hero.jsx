@@ -1,8 +1,10 @@
 import "./hero.css";
+import { Element } from "react-scroll"; 
 import heroBackground from "/hero-background.jpeg";
 
 const Hero = () => {
     return (
+        <Element name="home">
         <div className="hero" style={{ backgroundImage: `url(${heroBackground})` }}>
             <h1>Hopire</h1>
             <h2>Tech Solutions</h2>
@@ -13,6 +15,7 @@ const Hero = () => {
             <div className="stick"></div>
             <button>Get Started</button>
         </div>
+        </Element>
     );
 };
 

@@ -9,13 +9,21 @@ import Hero from "./assets/Components/Hero/Hero.jsx";
 import Portfolio from "./assets/Components/Portfolio/Portfolio.jsx";
 
 createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<BrowserRouter>
-			<Navbar />
-			<Hero />
-			<Portfolio />
-			<ClientTestimonials />
-			<Footer />
-		</BrowserRouter>
-	</StrictMode>
+  <StrictMode>
+    <BrowserRouter>
+      <Navbar />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
+      </div>
+      <div id="testimonials">
+        <ClientTestimonials />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
+    </BrowserRouter>
+  </StrictMode>
 );

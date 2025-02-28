@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 const Portfolio = () => {
   // Portfolio data
@@ -125,38 +126,40 @@ const Portfolio = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <h2 style={styles.heading}>Our Portfolio</h2>
-      
-      <div style={styles.portfolioGrid}>
-        {portfolioItems.map((item) => (
-          <div key={item.id} style={styles.portfolioCard(item)}>
-            <h3 style={styles.cardTitle(item)}>{item.title}</h3>
-            
-            <div style={styles.imageContainer}>
-              <img 
-                src={item.imageUrl} 
-                alt={item.title}
-                style={styles.portfolioImage}
-              />
+    <Element name="portfolio">
+      <div style={styles.container}>
+        <h2 style={styles.heading}>Our Portfolio</h2>
+
+        <div style={styles.portfolioGrid}>
+          {portfolioItems.map((item) => (
+            <div key={item.id} style={styles.portfolioCard(item)}>
+              <h3 style={styles.cardTitle(item)}>{item.title}</h3>
+
+              <div style={styles.imageContainer}>
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  style={styles.portfolioImage}
+                />
+              </div>
+
+              <p style={styles.cardDescription}>
+                {item.description}
+              </p>
+
+              <div style={styles.buttonContainer}>
+                <a
+                  href={`#portfolio-${item.id}`}
+                  style={styles.knowMoreButton(item)}
+                >
+                  Know More
+                </a>
+              </div>
             </div>
-            
-            <p style={styles.cardDescription}>
-              {item.description}
-            </p>
-            
-            <div style={styles.buttonContainer}>
-              <a 
-                href={`#portfolio-${item.id}`} 
-                style={styles.knowMoreButton(item)}
-              >
-                Know More
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
