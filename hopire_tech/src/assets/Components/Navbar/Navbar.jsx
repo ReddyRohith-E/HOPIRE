@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink, Events, scrollSpy } from "react-scroll";
 import "./Navbar.css";
-import logo from "/logo.png";
+import logo from "/logo.jpeg";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
