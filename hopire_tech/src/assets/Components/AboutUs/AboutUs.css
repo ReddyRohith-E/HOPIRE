@@ -1,0 +1,149 @@
+.about-us {
+	height: 100vh;
+	background: linear-gradient(#1d222a, #001136);
+}
+
+.about-us h1 {
+	font-size: 5rem;
+	color: #00eafa;
+	text-align: center;
+	font-weight: 800;
+	padding: 3rem 0;
+}
+
+.about-us-container {
+	position: relative;
+	height: 100%;
+}
+
+.about-us-section {
+	background-color: #d4f2f4;
+	color: #001136;
+	padding: 2rem;
+	border-radius: 40px;
+}
+
+.about-us-section .title {
+	font-size: 2.5rem;
+	font-family: "Book Antiqua";
+}
+
+.about-us-image {
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #001136;
+	border: 5px solid #d4f2f4;
+	border-radius: 40px;
+	z-index: 2;
+}
+
+.about-us img {
+	width: 50%;
+}
+
+.top {
+	position: relative;
+	display: grid;
+	padding: 0 5%;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2%;
+	align-items: center;
+	justify-content: center;
+}
+
+#why-choose-us,
+#who-we-are {
+	position: relative;
+	translate: none;
+	z-index: 1;
+}
+
+#who-we-are {
+	translate: 106%;
+}
+
+#who-we-are.visible {
+	animation: moveLeft 1s forwards;
+}
+
+#why-choose-us {
+	translate: -106%;
+}
+
+#why-choose-us.visible {
+	animation: moveRight 1s forwards;
+}
+
+#vision,
+#mission {
+	position: absolute;
+	scale: 0.5;
+	bottom: 30%;
+	width: 43%;
+}
+
+#vision {
+	left: 5%;
+	translate: 53.5% -125%;
+}
+
+#vision.visible {
+	animation: moveBottomLeft 1s forwards;
+}
+
+#mission {
+	right: 5%;
+	translate: -53.5% -125%;
+}
+
+#mission.visible {
+	animation: moveBottomRight 1s forwards;
+}
+
+.about-us-section p {
+	text-align: justify;
+}
+
+@keyframes moveLeft {
+	from {
+		translate: 106%;
+	}
+	to {
+		translate: 0%;
+	}
+}
+
+@keyframes moveRight {
+	from {
+		translate: -106%;
+	}
+	to {
+		translate: 0%;
+	}
+}
+
+@keyframes moveBottomLeft {
+	from {
+		translate: 53.5% -125%;
+		scale: 0.5;
+	}
+
+	to {
+		translate: 0;
+		scale: 1;
+	}
+}
+
+@keyframes moveBottomRight {
+	from {
+		translate: -53.5% -125%;
+		scale: 0.5;
+	}
+	to {
+		translate: 0;
+		scale: 1;
+	}
+}

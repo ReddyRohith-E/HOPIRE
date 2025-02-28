@@ -7,12 +7,14 @@ import Footer from "./assets/Components/Footer/Footer.jsx";
 import ClientTestimonials from "./assets/Components/Testimonials/ClientTestimonials.jsx";
 import Hero from "./assets/Components/Hero/Hero.jsx";
 import Portfolio from "./assets/Components/Portfolio/Portfolio.jsx";
+import AboutUs from "./assets/Components/AboutUs/AboutUs.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<BrowserRouter>
 			<Navbar />
 			<Hero />
+			<AboutUs />
 			<Portfolio />
 			<ClientTestimonials />
 			<Footer />
