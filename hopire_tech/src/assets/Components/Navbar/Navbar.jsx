@@ -33,7 +33,6 @@ const Navbar = () => {
     <header className={`navbar ${isOpen ? "nav-open" : ""}`}>
       <div className="logo">
         <img src={logo} alt="logo" />
-        <h1>Hopire</h1>
       </div>
       <button className="hamburger" onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}

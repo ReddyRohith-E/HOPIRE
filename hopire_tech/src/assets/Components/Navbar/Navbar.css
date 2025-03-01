@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -18,7 +18,7 @@
 }
 
 .logo img {
-    height: 50px;
+    height: 100px;
     margin-right: 1rem;
     object-fit: cover;
 }
@@ -39,6 +39,7 @@
 .navbar ul li {
     margin-left: 2rem;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .navbar ul li a {
