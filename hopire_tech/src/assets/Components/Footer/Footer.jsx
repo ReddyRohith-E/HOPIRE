@@ -1,8 +1,7 @@
-// Footer.jsx
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "/logo.png";
-import {FaMapMarkerAlt,FaPhoneAlt, FaEnvelope,FaLinkedin,FaInstagram,FaGithub,FaFacebook} from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedin, FaInstagram, FaGithub, FaFacebook } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -46,27 +45,27 @@ const Footer = () => {
             <div className="nav-social">
               <nav className="navigation">
                 <ul>
-                  <li><Link to="/about">ABOUT US</Link></li>
-                  <li><Link to="/contact">CONTACT US</Link></li>
-                  <li><Link to="/services">SERVICES</Link></li>
-                  <li><Link to="/portfolio">PORTFOLIO</Link></li>
+                  <li><ScrollLink to="about" smooth={true} duration={300} offset={-80} spy={true}>ABOUT US</ScrollLink></li>
+                  <li><ScrollLink to="contact" smooth={true} duration={300} offset={-80} spy={true}>CONTACT US</ScrollLink></li>
+                  <li><ScrollLink to="services" smooth={true} duration={300} offset={-80} spy={true}>SERVICES</ScrollLink></li>
+                  <li><ScrollLink to="portfolio" smooth={true} duration={300} offset={-80} spy={true}>PORTFOLIO</ScrollLink></li>
                 </ul>
               </nav>
               
               <div className="social-media">
                 <span>Social Media</span>
-                <Link to="https://www.linkedin.com/company/hopire-tech/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/hopire-tech/" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
-                </Link>
-                <Link to="https://www.instagram.com/hopire_tech_solutions/" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="https://www.instagram.com/hopire_tech_solutions/" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
-                </Link>
-                <Link to="https://github.com/Hopire" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="https://github.com/Hopire" target="_blank" rel="noopener noreferrer">
                   <FaGithub />
-                </Link>
-                <Link to="https://www.facebook.com/share/1SWXyJ3euA/" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a href="https://www.facebook.com/share/1SWXyJ3euA/" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
