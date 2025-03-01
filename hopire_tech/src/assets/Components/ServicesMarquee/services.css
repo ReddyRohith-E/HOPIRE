@@ -1,0 +1,40 @@
+.scrolling-text {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #000;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/* overflow: hidden; */
+	display: flex;
+	gap: 10rem;
+	animation: scroll 50s linear infinite;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.scrolling-text li {
+	list-style: none;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scrolling-text span {
+	font-family: "Book Antiqua";
+}
+
+.services-marquee {
+	background-color: #00eafa !important;
+	overflow: hidden;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(30%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

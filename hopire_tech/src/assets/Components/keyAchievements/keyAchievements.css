@@ -1,0 +1,38 @@
+.keyAchievements{
+    background: var(--primary-color);
+    padding: 4rem 11%;
+    display: flex;
+}
+
+.keyAchievements *{
+    width: 50%;
+}
+
+.keyAchievements h1{
+    color: #00eafa;
+    font-size: 3rem;
+}
+
+.keyAchievements__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.keyAchievements__card{
+    color: #D6DDE6;
+    border-top: 2px solid #D6DDE633;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.keyAchievements__card h2{
+    font-size: 5rem;
+}
+
+.keyAchievements__card p{
+    /* font-size: 1.5rem; */
+    color: #D6DDE6;
+    white-space: nowrap;
+    margin-bottom: 5rem;
+}
