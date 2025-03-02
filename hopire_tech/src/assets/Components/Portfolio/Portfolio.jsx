@@ -8,7 +8,8 @@ const Portfolio = () => {
 		{
 			id: 1,
 			title: "ASHV 2k25",
-			imageUrl: "/ashv_website.jpg", // Replace with actual image path
+			imageUrl: "/ashv_website.jpg", 
+			url: "https://ashv2k.in/",
 			description:
 				"The ASHV website showcases a dynamic two-day national level techno-cultural-sports fest. It highlights various events, including technical and non-technical competitions, sports showdowns, diverse food stalls, and engaging fun games. The site invites visitors to experience the excitement and camaraderie of the fest.",
 			buttonColor: "var(--primary-color)",
@@ -20,7 +21,8 @@ const Portfolio = () => {
 		{
 			id: 2,
 			title: "MITS Foundation",
-			imageUrl: "/mits_foundation.jpg", // Replace with actual image path
+			imageUrl: "/mits_foundation.jpg",
+			url: "https://mits-foundation.netlify.app/",
 			description:
 				"The MITS Foundation website serves as a comprehensive platform detailing the institution's mission, values, and initiatives. It offers insights into various programs and provides resources for students and stakeholders. The site emphasizes the foundation's commitment to education and community development.",
 			buttonColor: "var(--secondary-color)",
@@ -32,7 +34,8 @@ const Portfolio = () => {
 		{
 			id: 3,
 			title: "Swagath 2k24",
-			imageUrl: "/swagath_website.jpg", // Replace with actual image path
+			imageUrl:"/swagath_website.jpg",
+			url: "https://swagath-2k24.netlify.app/", 
 			description:
 				"The Swagath website showcases the annual college festival celebrating culture, technology, and creativity. The platform highlights various events, performances, and competitions that attract participants from across the region.",
 			buttonColor: "var(--secondary-color)",
@@ -44,7 +47,8 @@ const Portfolio = () => {
 		{
 			id: 4,
 			title: "MITS Web Club",
-			imageUrl: "/mits_webclub.jpg", // Replace with actual image path
+			imageUrl: "/mits_webclub.jpg", 
+			url: "https://mitswebclub.netlify.app/",
 			description:
 				"The MITS Web Club Website is a digital hub designed to showcase the club's activities, projects, events and workshops. It serves as an interactive platform for members to collaborate, learn, and share their knowledge in web development and design. The site aims to foster a community of tech enthusiasts and creators.",
 			buttonColor: "var(--primary-color)",
@@ -56,7 +60,8 @@ const Portfolio = () => {
 		{
 			id: 5,
 			title: "INNOSPARK 1.0",
-			imageUrl: "/innospark_website.jpg", // Replace with actual image path
+			imageUrl: "/innospark_website.jpg",
+			url: "https://innospark-2024.netlify.app/",
 			description:
 				"The INNOSPARK 1.0 website details a national-level hackathon organized by the Department of CSE at Madanapalle Institute of Technology & Science. It provides information on event schedules, registration process, prize details, and suggested problem statements, encouraging innovation and real-world problem-solving skills among participants.",
 			buttonColor: "var(--primary-color)",
@@ -166,7 +171,7 @@ const Portfolio = () => {
 
 							<div style={styles.buttonContainer}>
 								<a
-									href={`#portfolio-${item.id}`}
+									href={`${item.url}`} target="_blank"
 									style={styles.knowMoreButton(item)}
 								>
 									Know More

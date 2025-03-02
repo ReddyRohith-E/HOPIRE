@@ -184,10 +184,10 @@ const ClientTestimonials = () => {
     <div style={testimonialStyles.container}>
       <div style={testimonialStyles.innerContainer}>
         <h2 style={testimonialStyles.heading}>Client Testimonials</h2>
-        
+
         {/* Desktop View */}
         <div className="desktop-view" style={testimonialStyles.desktopView}>
-          <button 
+          <button
             onClick={prevTestimonial}
             style={testimonialStyles.navButton}
             aria-label="Previous testimonial"
@@ -202,7 +202,7 @@ const ClientTestimonials = () => {
               <p style={testimonialStyles.date}>{testimonials[currentIndex].date}</p>
             </div>
           </div>
-          <button 
+          <button
             onClick={nextTestimonial}
             style={testimonialStyles.navButton}
             aria-label="Next testimonial"
@@ -210,7 +210,7 @@ const ClientTestimonials = () => {
             <FaArrowRight />
           </button>
         </div>
-        
+
         {/* Mobile View */}
         <div className="mobile-view" style={testimonialStyles.mobileView}>
           <div style={testimonialStyles.mobileCard}>
@@ -221,11 +221,11 @@ const ClientTestimonials = () => {
             <p style={testimonialStyles.content}>{testimonials[currentIndex].content}</p>
             <p style={testimonialStyles.mobileDate}>{testimonials[currentIndex].date}</p>
           </div>
-          
+
           {/* Navigation dots for mobile */}
           <div style={testimonialStyles.navigationDots}>
             {testimonials.map((_, index) => (
-              <button 
+              <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 style={{
@@ -236,17 +236,17 @@ const ClientTestimonials = () => {
               />
             ))}
           </div>
-          
+
           {/* Navigation Arrows - visible only on mobile view */}
           <div className="nav-buttons" style={testimonialStyles.navButtons}>
-            <button 
+            <button
               onClick={prevTestimonial}
               style={testimonialStyles.navButton}
               aria-label="Previous testimonial"
             >
               <FaArrowLeft />
             </button>
-            <button 
+            <button
               onClick={nextTestimonial}
               style={testimonialStyles.navButton}
               aria-label="Next testimonial"

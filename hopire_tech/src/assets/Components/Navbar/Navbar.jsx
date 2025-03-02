@@ -7,9 +7,14 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
   };
 
   useEffect(() => {
@@ -23,18 +28,23 @@ const Navbar = () => {
 
     scrollSpy.update();
 
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
       Events.scrollEvent.remove("begin");
       Events.scrollEvent.remove("end");
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  const navbarOpacity = Math.max(1 - scrollPosition / 300, 0.7);
+
   return (
-    <header className={`navbar ${isOpen ? "nav-open" : ""}`}>
+    <header className={`navbar ${isOpen ? "nav-open" : ""}`} style={{ opacity: navbarOpacity }}>
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <button className="hamburger" onClick={toggleMenu}>
+      <button className="hamburger" onClick={toggleMenu} style={{ transition: "transform 0.3s ease" }}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       <nav>
