@@ -4,36 +4,21 @@ import aboutUsImage from "./aboutUs.png";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver";
 
 const AboutUs = () => {
-	const whoWeAreRef = useRef(null);
-	const imageRef = useRef(null);
-	const whyChooseUsRef = useRef(null);
-	const visionRef = useRef(null);
-	const missionRef = useRef(null);
+	const aboutUsRef = useRef(null);
 
-	const whoWeAreVisible = useIntersectionObserver(whoWeAreRef, {
-		threshold: 0.2,
-	});
-	const imageVisible = useIntersectionObserver(imageRef, { threshold: 0.2 });
-	const whyChooseUsVisible = useIntersectionObserver(whyChooseUsRef, {
-		threshold: 0.2,
-	});
-	const visionVisible = useIntersectionObserver(visionRef, {
-		threshold: 0.2,
-	});
-	const missionVisible = useIntersectionObserver(missionRef, {
+	const aboutUsVisible = useIntersectionObserver(aboutUsRef, {
 		threshold: 0.2,
 	});
 
 	return (
 		<div className="about-us">
 			<h1>About Us</h1>
-			<div className="about-us-container">
+			<div className="about-us-container" ref={aboutUsRef}>
 				<div className="top">
 					<div
-						ref={whoWeAreRef}
 						id="who-we-are"
 						className={`about-us-section ${
-							whoWeAreVisible ? "visible" : ""
+							aboutUsVisible ? "visible" : ""
 						}`}
 					>
 						<div className="title">Who We Are</div>
@@ -49,18 +34,16 @@ const AboutUs = () => {
 						</p>
 					</div>
 					<div
-						ref={imageRef}
 						className={`about-us-image ${
-							imageVisible ? "visible" : ""
+							aboutUsVisible ? "visible" : ""
 						}`}
 					>
 						<img src={aboutUsImage} alt="" />
 					</div>
 					<div
-						ref={whyChooseUsRef}
 						id="why-choose-us"
 						className={`about-us-section ${
-							whyChooseUsVisible ? "visible" : ""
+							aboutUsVisible ? "visible" : ""
 						}`}
 					>
 						<div className="title">Why Choose Us</div>
@@ -77,10 +60,9 @@ const AboutUs = () => {
 					</div>
 				</div>
 				<div
-					ref={visionRef}
 					id="vision"
 					className={`about-us-section ${
-						visionVisible ? "visible" : ""
+						aboutUsVisible ? "visible" : ""
 					}`}
 				>
 					<div className="title">Vision</div>
@@ -96,10 +78,9 @@ const AboutUs = () => {
 					</p>
 				</div>
 				<div
-					ref={missionRef}
 					id="mission"
 					className={`about-us-section ${
-						missionVisible ? "visible" : ""
+						aboutUsVisible ? "visible" : ""
 					}`}
 				>
 					<div className="title">Mission</div>
