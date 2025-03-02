@@ -63,3 +63,32 @@
 		translate: 0 0;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.services {
+		padding: 2rem 5%;
+		flex-direction: column;
+	}
+	.services * {
+		width: 100%;
+	}
+	.services_container {
+		gap: 2rem;
+	}
+	.service {
+		padding: 2rem;
+	}
+	.service h2 {
+		font-size: 1.5rem;
+	}
+	.service p {
+		font-size: 1rem;
+		white-space: normal;
+	}
+	.service-icon {
+		width: 40px;
+	}
+	.service-icon img{
+		width: 50%;
+	}
+}

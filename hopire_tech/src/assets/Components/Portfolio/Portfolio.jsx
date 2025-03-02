@@ -1,5 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
+import './portfolio.css';
 
 const Portfolio = () => {
 	// Portfolio data
@@ -116,7 +117,7 @@ const Portfolio = () => {
 			lineHeight: "1.6",
 			color: item.fontColor,
 			flex: "1",
-      fontWeight: "600"
+			fontWeight: "600",
 		}),
 		buttonContainer: {
 			padding: "0 32px 24px 32px",
@@ -146,7 +147,7 @@ const Portfolio = () => {
 			<div style={styles.container}>
 				<h2 style={styles.heading}>Our Portfolio</h2>
 
-				<div style={styles.portfolioGrid}>
+				<div style={styles.portfolioGrid} className="portfolio-grid">
 					{portfolioItems.map((item) => (
 						<div key={item.id} style={styles.portfolioCard(item)}>
 							<h3 style={styles.cardTitle(item)}>{item.title}</h3>

@@ -38,3 +38,10 @@
 		transform: translateX(-100%);
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.scrolling-text {
+		gap: 2rem;
+	}
+	
+}

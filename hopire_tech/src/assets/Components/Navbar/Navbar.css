@@ -115,3 +115,14 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 480px) {
+    .logo img{
+        height: 60px;
+        padding: 0;
+    }
+    
+    .navbar {
+        padding: 0 0.5rem;
+    }
+}

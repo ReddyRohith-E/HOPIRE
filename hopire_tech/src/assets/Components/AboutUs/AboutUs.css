@@ -147,3 +147,38 @@
 		scale: 1;
 	}
 }
+
+
+@media screen and (max-width: 478px) {
+	.about-us{
+		height: auto;
+		padding: 0 2%;
+	}
+	#who-we-are,#why-choose-us, #vision, #mission {
+		translate: none !important;
+		animation: none !important;
+	}
+	#who-we-are.visible,
+	#why-choose-us.visible,
+	#vision.visible,
+	#mission.visible {
+		translate: none !important;
+		animation: none !important;
+	}
+	.about-us-image{
+		display: none;
+	}
+	.top{
+		grid-template-columns: 1fr;
+		display: grid;
+		padding: 5% 0;
+		height: auto;
+	}
+	#vision, #mission{
+		position: static;
+		scale: 1;
+		bottom: 0;
+		width: 100%;
+		margin: 2% 0;
+	}
+}

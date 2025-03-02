@@ -36,3 +36,32 @@
     white-space: nowrap;
     margin-bottom: 5rem;
 }
+
+@media screen and (max-width: 768px){
+    .keyAchievements{
+        padding: 4rem 5%;
+        flex-direction: column;
+    }
+
+    .keyAchievements *{
+        width: 100%;
+    }
+
+    .keyAchievements__container{
+        grid-template-columns: 1fr;
+    }
+
+    .keyAchievements__card{
+        padding: 2rem;
+    }
+
+    .keyAchievements__card h2{
+        font-size: 3rem;
+    }
+
+    .keyAchievements__card p{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+}

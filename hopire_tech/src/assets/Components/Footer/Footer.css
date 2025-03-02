@@ -171,8 +171,12 @@
 }
 
 @media (max-width: 480px) {
+    .container{
+        max-width: 100%;
+        padding: 0;
+    }
     .header-section h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .navigation ul {
@@ -184,9 +188,55 @@
         flex-wrap: wrap;
     }
 
+    .footer-logo{
+        margin-bottom: 2rem;
+    }
+
+    .contact-item{
+        justify-content: flex-start;
+    }
+
+    .contact-item span{
+        text-align: left;
+        line-height: 150%;
+    }
+
     .social-media span {
         display: block;
         text-align: center;
-        margin-bottom: 1rem;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .myrow{
+        flex-direction: column;
+    }
+    .nav-social{
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .copyright nav{
+        margin-bottom: 0.7rem;
+    }
+    
+    .copyright nav ul{
+        flex-direction: row;
+    }
+    
+    .copyright nav ul li {
+        padding: 0.5rem;
+        white-space: nowrap;
+    }
+    
+    .copyright nav ul li a {
+        font-size: 0.8rem;
     }
 }
