@@ -37,11 +37,11 @@ const ClientTestimonials = () => {
   ];
 
   const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 2) % testimonials.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 2 + testimonials.length) % testimonials.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
   };
 
   const testimonialStyles = {
