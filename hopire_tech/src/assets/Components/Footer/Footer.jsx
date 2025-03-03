@@ -42,7 +42,7 @@ const Footer = () => {
 						<div className="contact-item" onClick={handleLocClick}>
 							<FaMapMarkerAlt />
 							<span>
-								1-195, NBT Road, Angallu, Kurabalakota, Andhra
+								1-195, MBT Road, Angallu, Kurabalakota, Andhra
 								Pradesh
 							</span>
 						</div>
