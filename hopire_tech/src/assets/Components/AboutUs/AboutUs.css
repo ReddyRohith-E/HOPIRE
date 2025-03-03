@@ -78,11 +78,9 @@
 #vision,
 #mission {
 	scale: 0.5;
-	bottom: 30%;
 }
 
 #vision {
-	left: 5%;
 	translate: 53.5% -125%;
 	grid-area: vision;
 }
@@ -92,7 +90,6 @@
 }
 
 #mission {
-	right: 5%;
 	translate: -53.5% -125%;
 	grid-area: mission;
 }
@@ -151,7 +148,7 @@
 		height: auto;
 		padding: 0 2%;
 	}
-	.about-us-container{
+	.about-us-container {
 		display: flex;
 		flex-direction: column;
 		padding: 10px;
@@ -181,7 +178,7 @@
 		width: 100%;
 		margin: 2% 0;
 	}
-	.about-us-section{
+	.about-us-section {
 		padding: 2rem;
 	}
 }

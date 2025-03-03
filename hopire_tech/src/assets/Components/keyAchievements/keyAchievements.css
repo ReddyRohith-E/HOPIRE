@@ -1,72 +1,90 @@
-.keyAchievements{
-    background: var(--primary-color);
-    padding: 4rem 11%;
-    display: flex;
+.keyAchievements {
+	background: var(--primary-color);
+	padding: 4rem 11%;
+	display: flex;
 }
 
-.keyAchievements *{
-    width: 50%;
+.keyAchievements * {
+	width: 50%;
 }
 
-.keyAchievements h1{
-    color: #00eafa;
-    font-size: 3rem;
+.keyAchievements h1 {
+	color: #00eafa;
+	font-size: 3rem;
 }
 
-.keyAchievements__container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+.keyAchievements__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
 }
 
-.keyAchievements__card{
-    color: #D6DDE6;
-    border-top: 2px solid #D6DDE633;
+.keyAchievements__card {
+	color: #d6dde6;
+	border-top: 2px solid #d6dde633;
+    position: relative;
+	width: 100%;
+	font-family: "Plus Jakarta Sans";
+}
+
+.keyAchievements__card::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: #00eafa;
+    transition: width 0.3s ease;
+}
+
+.keyAchievements__card:hover::before{
     width: 100%;
-    font-family: 'Plus Jakarta Sans';
 }
 
-.keyAchievements__card h2{
-    font-size: 5rem;
+.keyAchievements__card h2 {
+	font-size: 5rem;
+	transition: color 0.3s ease;
 }
 
-.keyAchievements__card p{
-    /* font-size: 1.5rem; */
-    color: #D6DDE6;
-    white-space: nowrap;
-    margin-bottom: 5rem;
+.keyAchievements__card:hover h2 {
+	color: #00eafa;
 }
 
-@media screen and (max-width: 768px){
-    .keyAchievements{
-        padding: 4rem 2%;
-        flex-direction: column;
-    }
+.keyAchievements__card p {
+	/* font-size: 1.5rem; */
+	color: #d6dde6;
+	white-space: nowrap;
+	margin-bottom: 5rem;
+}
 
-    .keyAchievements h1{
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
+@media screen and (max-width: 768px) {
+	.keyAchievements {
+		padding: 4rem 2%;
+		flex-direction: column;
+	}
 
-    .keyAchievements *{
-        width: 100%;
-    }
+	.keyAchievements h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
 
-    .keyAchievements__container{
-        gap: 10px;
-    }
+	.keyAchievements * {
+		width: 100%;
+	}
 
-    .keyAchievements__card{
-        padding: 10px;
-    }
+	.keyAchievements__container {
+		gap: 10px;
+	}
 
-    .keyAchievements__card h2{
-        font-size: 2rem;
-    }
+	.keyAchievements__card {
+		padding: 10px;
+	}
 
-    .keyAchievements__card p{
-        font-size: 1rem;
-        margin-bottom: 3rem;
-    }
-    
+	.keyAchievements__card h2 {
+		font-size: 2rem;
+	}
+
+	.keyAchievements__card p {
+		font-size: 1rem;
+		margin-bottom: 3rem;
+	}
 }

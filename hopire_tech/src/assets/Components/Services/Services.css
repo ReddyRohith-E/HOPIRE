@@ -26,6 +26,25 @@
 	padding: 2rem 3rem;
 	position: relative;
 	translate: 0 calc(var(--distance) * -140%);
+	/* border-radius: 500px 50vw 50vw 500px; */
+}
+
+.service::before{
+	content: "";
+	height: 100%;
+	width: 0%;
+	background: #00eafa;
+	position: absolute;
+	/* border-radius: 500px 50vw 50vw 500px; */
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: width 500ms ease;
+	/* overflow: hidden; */
+}
+
+.service:hover::before{
+	width: 100%;
 }
 
 .service.service-visible {

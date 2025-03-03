@@ -8,15 +8,13 @@ const useIntersectionObserver = (ref, options = {}) => {
 			setIsVisible(entry.isIntersecting);
 		}, options);
 
-		const currentRef = ref.current;
-
-		if (currentRef) {
-			observer.observe(currentRef);
+		if (ref.current) {
+			observer.observe(ref.current);
 		}
 
 		return () => {
-			if (currentRef) {
-				observer.unobserve(currentRef);
+			if (ref.current) {
+				observer.unobserve(ref.current);
 			}
 		};
 	}, [ref, options]);
