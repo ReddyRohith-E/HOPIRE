@@ -1,5 +1,4 @@
 .about-us {
-	height: 100vh;
 	background: linear-gradient(#1d222a, #001136);
 }
 
@@ -14,12 +13,18 @@
 .about-us-container {
 	position: relative;
 	height: 100%;
+	display: grid;
+	padding: 2rem;
+	gap: 2rem;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto auto;
+	grid-template-areas: "wwa wwa im im wcu wcu" "vision vision vision mission mission mission";
 }
 
 .about-us-section {
 	background-color: #d4f2f4;
 	color: #001136;
-	padding: 2rem;
+	padding: 3.5rem;
 	border-radius: 40px;
 }
 
@@ -38,20 +43,11 @@
 	border: 5px solid #d4f2f4;
 	border-radius: 40px;
 	z-index: 2;
+	grid-area: im;
 }
 
 .about-us img {
 	width: 50%;
-}
-
-.top {
-	position: relative;
-	display: grid;
-	padding: 0 5%;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 2%;
-	align-items: center;
-	justify-content: center;
 }
 
 #why-choose-us,
@@ -63,6 +59,7 @@
 
 #who-we-are {
 	translate: 106%;
+	grid-area: wwa;
 }
 
 #who-we-are.visible {
@@ -71,6 +68,7 @@
 
 #why-choose-us {
 	translate: -106%;
+	grid-area: wcu;
 }
 
 #why-choose-us.visible {
@@ -79,15 +77,14 @@
 
 #vision,
 #mission {
-	position: absolute;
 	scale: 0.5;
 	bottom: 30%;
-	width: 43%;
 }
 
 #vision {
 	left: 5%;
 	translate: 53.5% -125%;
+	grid-area: vision;
 }
 
 #vision.visible {
@@ -97,6 +94,7 @@
 #mission {
 	right: 5%;
 	translate: -53.5% -125%;
+	grid-area: mission;
 }
 
 #mission.visible {
@@ -148,13 +146,15 @@
 	}
 }
 
-
 @media screen and (max-width: 478px) {
-	.about-us{
+	.about-us {
 		height: auto;
 		padding: 0 2%;
 	}
-	#who-we-are,#why-choose-us, #vision, #mission {
+	#who-we-are,
+	#why-choose-us,
+	#vision,
+	#mission {
 		translate: none !important;
 		animation: none !important;
 	}
@@ -165,16 +165,17 @@
 		translate: none !important;
 		animation: none !important;
 	}
-	.about-us-image{
+	.about-us-image {
 		display: none;
 	}
-	.top{
+	.top {
 		grid-template-columns: 1fr;
 		display: grid;
 		padding: 5% 0;
 		height: auto;
 	}
-	#vision, #mission{
+	#vision,
+	#mission {
 		position: static;
 		scale: 1;
 		bottom: 0;

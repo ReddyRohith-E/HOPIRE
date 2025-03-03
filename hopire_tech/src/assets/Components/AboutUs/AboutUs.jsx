@@ -14,50 +14,46 @@ const AboutUs = () => {
 		<div className="about-us">
 			<h1>About Us</h1>
 			<div className="about-us-container" ref={aboutUsRef}>
-				<div className="top">
-					<div
-						id="who-we-are"
-						className={`about-us-section ${
-							aboutUsVisible ? "visible" : ""
-						}`}
-					>
-						<div className="title">Who We Are</div>
-						<p>
-							HOPIRE TECH SOLUTIONS is a student-led digital
-							consultancy turning ideas into impactful web
-							solutions. Our team specializes in website
-							development, UI/UX design, and web applications,
-							crafting seamless and visually striking digital
-							experiences. With successful projects we help
-							businesses, startups, and institutions enhance their
-							digital presence.
-						</p>
-					</div>
-					<div
-						className={`about-us-image ${
-							aboutUsVisible ? "visible" : ""
-						}`}
-					>
-						<img src={aboutUsImage} alt="" />
-					</div>
-					<div
-						id="why-choose-us"
-						className={`about-us-section ${
-							aboutUsVisible ? "visible" : ""
-						}`}
-					>
-						<div className="title">Why Choose Us</div>
-						<p>
-							At HOPIRE TECH SOLUTIONS, we believe in merging
-							creativity with technology to build digital
-							experiences that stand out. As a dynamic team of
-							young professionals, we bring fresh ideas, modern
-							tech, and agile execution to every project. Our
-							commitment to quality, efficiency, and innovation
-							ensures that we create digital experiences that
-							truly stand out.
-						</p>
-					</div>
+				<div
+					id="who-we-are"
+					className={`about-us-section ${
+						aboutUsVisible ? "visible" : ""
+					}`}
+				>
+					<div className="title">Who We Are</div>
+					<p>
+						HOPIRE TECH SOLUTIONS is a student-led digital
+						consultancy turning ideas into impactful web solutions.
+						Our team specializes in website development, UI/UX
+						design, and web applications, crafting seamless and
+						visually striking digital experiences. With successful
+						projects we help businesses, startups, and institutions
+						enhance their digital presence.
+					</p>
+				</div>
+				<div
+					className={`about-us-image ${
+						aboutUsVisible ? "visible" : ""
+					}`}
+				>
+					<img src={aboutUsImage} alt="" />
+				</div>
+				<div
+					id="why-choose-us"
+					className={`about-us-section ${
+						aboutUsVisible ? "visible" : ""
+					}`}
+				>
+					<div className="title">Why Choose Us</div>
+					<p>
+						At HOPIRE TECH SOLUTIONS, we believe in merging
+						creativity with technology to build digital experiences
+						that stand out. As a dynamic team of young
+						professionals, we bring fresh ideas, modern tech, and
+						agile execution to every project. Our commitment to
+						quality, efficiency, and innovation ensures that we
+						create digital experiences that truly stand out.
+					</p>
 				</div>
 				<div
 					id="vision"
