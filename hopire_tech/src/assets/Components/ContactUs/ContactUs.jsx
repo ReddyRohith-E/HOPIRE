@@ -51,10 +51,12 @@ const ContactUs = () => {
             "f-V4CQWLx0WaRG_3S"
         ).then((response) => {
             console.log("Email sent successfully:", response.status, response.text);
+            alert("Email sent successfully. We will get back to you soon.");
             localStorage.removeItem("contactFormData");
             setFormData({ name: "", email: "", message: "" });
         }).catch((err) => {
             console.error("Failed to send email:", err);
+            alert("Failed to send email. Please try again later.");
         });
     };
 
