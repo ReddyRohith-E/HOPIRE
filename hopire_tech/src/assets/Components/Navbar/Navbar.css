@@ -9,7 +9,7 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
 }
 
 .logo {
@@ -19,6 +19,7 @@
 
 .logo img {
     height: 100px;
+    padding: 20px;
     margin-right: 1rem;
     object-fit: cover;
 }
