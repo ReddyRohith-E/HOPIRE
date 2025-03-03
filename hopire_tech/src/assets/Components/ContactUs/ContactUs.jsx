@@ -42,13 +42,10 @@ const ContactUs = () => {
         };
 
         emailjs.send(
-            // process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            // process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-            "service_pfzqf7o",
-            "template_i6tk21h",
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
             emailParams,
-            // process.env.REACT_APP_EMAILJS_USER_ID
-            "f-V4CQWLx0WaRG_3S"
+            process.env.REACT_APP_EMAILJS_USER_ID
         ).then((response) => {
             console.log("Email sent successfully:", response.status, response.text);
             alert("Email sent successfully. We will get back to you soon.");
