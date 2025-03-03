@@ -138,6 +138,7 @@ const Portfolio = () => {
 			cursor: "pointer",
 			display: "inline-block",
 			textDecoration: "none",
+			zindex:"100",
 		}),
 		// For responsive design
 		"@media (max-width: 768px)": {
@@ -173,6 +174,7 @@ const Portfolio = () => {
 								<a
 									href={`${item.url}`} target="_blank"
 									style={styles.knowMoreButton(item)}
+									className="know-more-button"
 								>
 									Know More
 								</a>
