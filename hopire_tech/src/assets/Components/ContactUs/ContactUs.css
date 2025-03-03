@@ -73,8 +73,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    /* background-color: var(--primary-color);
-    color: rgb(0, 234, 250); */
+    background-color: var(--primary-color);
+    color: rgb(0, 234, 250);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
