@@ -1,0 +1,123 @@
+.contact-us {
+    background: var(--primary-color);
+    padding: 4rem 11%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-us h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    background-color: var(--quaternary-color);
+    opacity: 0.9;
+    color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border: 2px solid var(--dark-color);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--quaternary-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: rgb(0, 234, 250);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    /* background-color: var(--primary-color);
+    color: rgb(0, 234, 250); */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-us {
+        padding: 2rem 5%;
+    }
+
+    .contact-us h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-us h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 0.85rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}

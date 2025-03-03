@@ -11,6 +11,7 @@ import AboutUs from "./assets/Components/AboutUs/AboutUs.jsx";
 import ServicesMarquee from "./assets/Components/ServicesMarquee/ServicesMarquee.jsx";
 import KeyAchievements from "./assets/Components/keyAchievements/keyAchievements.jsx";
 import Services from "./assets/Components/Services/Services.jsx";
+import ContactUs from "./assets/Components/ContactUs/ContactUs.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
@@ -32,6 +33,9 @@ createRoot(document.getElementById("root")).render(
 			</div>
 			<div id="testimonials">
 				<ClientTestimonials />
+			</div>
+			<div id="contact">
+				<ContactUs />
 			</div>
 			<div id="footer">
 				<Footer />

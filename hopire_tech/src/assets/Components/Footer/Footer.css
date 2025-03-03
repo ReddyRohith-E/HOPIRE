@@ -242,6 +242,11 @@
     }
     
     .copyright nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    .copyright p{
         font-size: 0.8rem;
+        margin: auto;
     }
 }
