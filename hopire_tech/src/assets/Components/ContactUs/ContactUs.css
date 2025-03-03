@@ -69,12 +69,12 @@ button[type="submit"] {
     font-family: 'Inter', sans-serif;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: var(--primary-color);
-    color: rgb(0, 234, 250);
+    filter: brightness(0.7);
+    transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
