@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "/logo.png";
+import logo from "/Logo.png";
 import {
 	FaMapMarkerAlt,
 	FaPhoneAlt,

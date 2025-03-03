@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import emailjs from "emailjs-com";
 import "./ContactUs.css";
 import useIntersectionObserver from "../../../hooks/useIntersectionObserver";
 
@@ -14,18 +15,47 @@ const ContactUs = () => {
         message: "",
     });
 
+    useEffect(() => {
+        const storedFormData = localStorage.getItem("contactFormData");
+        if (storedFormData) {
+            setFormData(JSON.parse(storedFormData));
+        }
+    }, []);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
+        setFormData((prevData) => {
+            const newData = { ...prevData, [name]: value };
+            localStorage.setItem("contactFormData", JSON.stringify(newData));
+            return newData;
+        });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log("Form submitted:", formData);
+
+        const emailParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            to_email: "hopiretech@gmail.com",
+            message: formData.message,
+        };
+
+        emailjs.send(
+            // process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            // process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            "service_pfzqf7o",
+            "template_i6tk21h",
+            emailParams,
+            // process.env.REACT_APP_EMAILJS_USER_ID
+            "f-V4CQWLx0WaRG_3S"
+        ).then((response) => {
+            console.log("Email sent successfully:", response.status, response.text);
+            localStorage.removeItem("contactFormData");
+            setFormData({ name: "", email: "", message: "" });
+        }).catch((err) => {
+            console.error("Failed to send email:", err);
+        });
     };
 
     return (
