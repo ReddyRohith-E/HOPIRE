@@ -201,6 +201,11 @@
         line-height: 150%;
     }
 
+    .footer-logo img{
+        width: 30vw;
+    }
+
+
     .social-media span {
         display: block;
         text-align: center;

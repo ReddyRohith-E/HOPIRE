@@ -151,6 +151,11 @@
 		height: auto;
 		padding: 0 2%;
 	}
+	.about-us-container{
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
 	#who-we-are,
 	#why-choose-us,
 	#vision,
@@ -168,12 +173,6 @@
 	.about-us-image {
 		display: none;
 	}
-	.top {
-		grid-template-columns: 1fr;
-		display: grid;
-		padding: 5% 0;
-		height: auto;
-	}
 	#vision,
 	#mission {
 		position: static;
@@ -181,5 +180,8 @@
 		bottom: 0;
 		width: 100%;
 		margin: 2% 0;
+	}
+	.about-us-section{
+		padding: 2rem;
 	}
 }

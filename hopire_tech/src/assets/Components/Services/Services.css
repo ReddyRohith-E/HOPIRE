@@ -91,4 +91,10 @@
 	.service-icon img{
 		width: 50%;
 	}
+	.service{
+		translate: none;
+	}
+	.service.service-visible{
+		animation: none;
+	}
 }

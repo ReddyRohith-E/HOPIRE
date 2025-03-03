@@ -39,8 +39,13 @@
 
 @media screen and (max-width: 768px){
     .keyAchievements{
-        padding: 4rem 5%;
+        padding: 4rem 2%;
         flex-direction: column;
+    }
+
+    .keyAchievements h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
 
     .keyAchievements *{
@@ -48,15 +53,15 @@
     }
 
     .keyAchievements__container{
-        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .keyAchievements__card{
-        padding: 2rem;
+        padding: 10px;
     }
 
     .keyAchievements__card h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .keyAchievements__card p{

@@ -42,8 +42,8 @@ const Footer = () => {
 						<div className="contact-item" onClick={handleLocClick}>
 							<FaMapMarkerAlt />
 							<span>
-								Kadiri Road, Angallu village, Madanapalle,
-								Andhra Pradesh
+								1-195, NBT Road, Angallu, Kurabalakota, Andhra
+								Pradesh
 							</span>
 						</div>
 						<div className="myrow">
