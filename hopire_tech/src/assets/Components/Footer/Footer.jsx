@@ -149,7 +149,7 @@ const Footer = () => {
 					</nav>
 					<a
 						href="./FiLLiP_Approval Letter_M29636630.pdf"
-					// target="_blank"
+						target="_blank"
 					>
 						View LLP Approval Document
 					</a>

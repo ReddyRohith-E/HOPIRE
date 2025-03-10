@@ -34,7 +34,7 @@ const AboutUs = () => {
                         <a
                             href="./FiLLiP_Approval Letter_M29636630.pdf"
                             // target="_blank"
-                            className="know-more-button"
+                            className="llp-button"
                         >
                             View LLP Approval Document
                         </a>
