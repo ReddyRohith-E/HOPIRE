@@ -147,7 +147,13 @@ const Footer = () => {
 							</li>
 						</ul>
 					</nav>
-					<p>Copyright © 2025 • Hopire Tech Solutions LLP</p>
+					<a
+						href="./FiLLiP_Approval Letter_M29636630.pdf"
+					// target="_blank"
+					>
+						View LLP Approval Document
+					</a>
+					{/* <p>Copyright © 2025 • Hopire Tech Solutions LLP</p> */}
 				</div>
 			</div>
 		</footer>

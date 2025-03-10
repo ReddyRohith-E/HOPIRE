@@ -86,6 +86,7 @@
 
 .contact-item:hover {
     color: var(--secondary-color); /* Aqua Hover */
+    filter: brightness(0.7);
 }
 
 .contact-item svg {
@@ -116,10 +117,13 @@
     font-size: 1rem;
     transition: color 0.3s ease;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .navigation a:hover {
     color: var(--secondary-color); /* Aqua Hover */
+    filter: brightness(0.7);
+    transform: scale(1.1);
 }
 
 .social-media {
@@ -138,11 +142,13 @@
 .social-media a {
     color: var(--font-color);
     font-size: 1.3rem;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .social-media a:hover {
     color: var(--secondary-color); /* Aqua Hover */
+    filter: brightness(0.7);
+    transform: scale(1.1);
 }
 
 .copyright {
@@ -154,6 +160,19 @@
     font-weight: 700;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.copyright a:hover{
+    color: var(--secondary-color); /* Aqua Hover */
+    filter: brightness(0.7);
+    transform: scale(1.1);
 }
 
 /* Media Queries for Responsive Design */
@@ -248,5 +267,10 @@
     .copyright p{
         font-size: 0.8rem;
         margin: auto;
+    }
+
+    .copyright a{
+        margin: auto;
+        font-size: 0.8rem;
     }
 }

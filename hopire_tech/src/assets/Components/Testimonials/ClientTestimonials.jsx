@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import '../Portfolio/portfolio.css'
 
 const ClientTestimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,23 +17,29 @@ const ClientTestimonials = () => {
 
   // Sample testimonial data
   const testimonials = [
+    // {
+    //   id: 1,
+    //   name: 'MITS',
+    //   content: '1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim',
+    //   date: 'May 8, 2020'
+    // },
+    // {
+    //   id: 2,
+    //   name: 'MITS',
+    //   content: '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim',
+    //   date: 'May 8, 2020'
+    // },
+    // {
+    //   id: 3,
+    //   name: 'MITS',
+    //   content: '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim',
+    //   date: 'May 8, 2020'
+    // }
     {
-      id: 1,
-      name: 'MITS',
-      content: '1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim',
-      date: 'May 8, 2020'
-    },
-    {
-      id: 2,
-      name: 'MITS',
-      content: '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim',
-      date: 'May 8, 2020'
-    },
-    {
-      id: 3,
-      name: 'MITS',
-      content: '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim',
-      date: 'May 8, 2020'
+      id: 4,
+      name: 'MITS College',
+      content: 'We are extremely pleased with the services provided by the startup founded by our students. Their innovative solutions and dedication have significantly improved our operational efficiency. We highly recommend their services to others looking for reliable and effective solutions.',
+      date: 'February 22, 2025'
     }
   ];
 
@@ -189,6 +196,7 @@ const ClientTestimonials = () => {
         <div className="desktop-view" style={testimonialStyles.desktopView}>
           <button
             onClick={prevTestimonial}
+            className='nav-button'
             style={testimonialStyles.navButton}
             aria-label="Previous testimonial"
           >
@@ -204,6 +212,7 @@ const ClientTestimonials = () => {
           </div>
           <button
             onClick={nextTestimonial}
+            className='nav-button'
             style={testimonialStyles.navButton}
             aria-label="Next testimonial"
           >

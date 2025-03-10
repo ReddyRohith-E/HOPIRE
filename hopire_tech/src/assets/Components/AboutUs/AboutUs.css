@@ -50,6 +50,30 @@
 	width: 50%;
 }
 
+.button-container {
+    margin-top: 16px;
+}
+
+.know-more-button {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 100;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.know-more-button:hover {
+    filter: brightness(0.7);
+    transform: scale(1.1);
+}
+
 #why-choose-us,
 #who-we-are {
 	position: relative;
