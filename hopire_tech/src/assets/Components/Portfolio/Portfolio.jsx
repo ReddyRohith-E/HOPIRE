@@ -22,7 +22,7 @@ const Portfolio = () => {
 			id: 2,
 			title: "MITS Foundation",
 			imageUrl: "/mits_foundation.jpg",
-			url: "https://mits-foundation.netlify.app/",
+			url: "https://mitsfoundation.org",
 			description:
 				"The MITS Foundation website serves as a comprehensive platform detailing the institution's mission, values, and initiatives. It offers insights into various programs and provides resources for students and stakeholders. The site emphasizes the foundation's commitment to education and community development.",
 			buttonColor: "var(--secondary-color)",
