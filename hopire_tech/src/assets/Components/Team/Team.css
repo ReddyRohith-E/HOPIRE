@@ -1,0 +1,41 @@
+.team {
+  padding: 2rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+}
+
+.profile-pic {
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.links a {
+  margin: 0 0.5rem;
+  color: #000;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #007bff;
+}

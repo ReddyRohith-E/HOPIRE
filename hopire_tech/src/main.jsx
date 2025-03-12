@@ -8,6 +8,7 @@ import ClientTestimonials from "./assets/Components/Testimonials/ClientTestimoni
 import Hero from "./assets/Components/Hero/Hero.jsx";
 import Portfolio from "./assets/Components/Portfolio/Portfolio.jsx";
 import AboutUs from "./assets/Components/AboutUs/AboutUs.jsx";
+import Team from "./assets/Components/Team/Team.jsx"
 import ServicesMarquee from "./assets/Components/ServicesMarquee/ServicesMarquee.jsx";
 import KeyAchievements from "./assets/Components/keyAchievements/keyAchievements.jsx";
 import Services from "./assets/Components/Services/Services.jsx";
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")).render(
 			</div>
 			<div id="about">
 				<AboutUs />
+				<Team />
 			</div>
 			<ServicesMarquee />
 			<KeyAchievements />
