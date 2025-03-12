@@ -1,10 +1,16 @@
 .team {
-  padding: 2rem;
+    background-color: var(--quaternary-color);
+    opacity: 0.9;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
 .heading {
-  text-align: center;
-  margin-bottom: 2rem;
+    color: var(--secondary-color);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .row {
@@ -12,6 +18,11 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   justify-items: center;
+}
+
+.row h3{
+    font-family: "Book Antiqua";
+    color: var(--primary-color);
 }
 
 .profile-card {
@@ -31,11 +42,13 @@
 
 .links a {
   margin: 0 0.5rem;
-  color: #000;
+  color:var(--dark-color);
   font-size: 1.5rem;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .links a:hover {
-  color: #007bff;
+    color: var(--secondary-color);
+    filter: brightness(0.7);
+    transform: scale(1.1);
 }
