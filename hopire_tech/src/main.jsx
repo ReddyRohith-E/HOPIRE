@@ -23,7 +23,6 @@ createRoot(document.getElementById("root")).render(
 			</div>
 			<div id="about">
 				<AboutUs />
-				<Team />
 			</div>
 			<ServicesMarquee />
 			<KeyAchievements />

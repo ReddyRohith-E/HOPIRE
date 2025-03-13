@@ -72,16 +72,6 @@ const teamData = [
       github: "https://github.com/",
       portfolio: "#"
     }
-  },
-  {
-    name: "Sai Jaswanth",
-    id: "8",
-    imagePath: "",
-    links: {
-      linkedin: "https://www.linkedin.com/",
-      github: "https://github.com/",
-      portfolio: "#"
-    }   
   }
 ];
 
