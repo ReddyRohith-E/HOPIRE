@@ -9,7 +9,7 @@ const Portfolio = () => {
 			id: 1,
 			title: "ASHV 2k25",
 			imageUrl: "/ashv_website.jpg", 
-			url: "https://ashv2k.in/",
+			url: "https://ashv2k24.netlify.app/",
 			description:
 				"The ASHV website showcases a dynamic two-day national level techno-cultural-sports fest. It highlights various events, including technical and non-technical competitions, sports showdowns, diverse food stalls, and engaging fun games. The site invites visitors to experience the excitement and camaraderie of the fest.",
 			buttonColor: "var(--primary-color)",
@@ -33,11 +33,11 @@ const Portfolio = () => {
 		},
 		{
 			id: 3,
-			title: "Swagath 2k24",
-			imageUrl:"/swagath_website.jpg",
-			url: "https://swagath-2k24.netlify.app/", 
+			title: "Green Valley School",
+			imageUrl:"/green_valley_school.png",
+			url: "https://green-valley-school-mpl.netlify.app/", 
 			description:
-				"The Swagath website showcases the annual college festival celebrating culture, technology, and creativity. The platform highlights various events, performances, and competitions that attract participants from across the region.",
+				"The Green Valley School website is a digital platform that provides comprehensive information about the school's mission, values, and educational programs. It features details about the curriculum, faculty, and extracurricular activities, aiming to foster a sense of community and engagement among students, parents, and educators.",
 			buttonColor: "var(--secondary-color)",
 			borderColor: "var(--quaternary-color)",
 			titleColor: "var(--secondary-color)",
@@ -57,19 +57,19 @@ const Portfolio = () => {
 			buttonFontColor: "#00EAFA",
 			fontColor: "#001136",
 		},
-		{
-			id: 5,
-			title: "INNOSPARK 1.0",
-			imageUrl: "/innospark_website.jpg",
-			url: "https://innospark-2024.netlify.app/",
-			description:
-				"The INNOSPARK 1.0 website details a national-level hackathon organized by the Department of CSE at Madanapalle Institute of Technology & Science. It provides information on event schedules, registration process, prize details, and suggested problem statements, encouraging innovation and real-world problem-solving skills among participants.",
-			buttonColor: "var(--primary-color)",
-			borderColor: "var(--tertiary-color)",
-			titleColor: "var(--primary-color)",
-			buttonFontColor: "#00EAFA",
-			fontColor: "#001136",
-		},
+		// {
+		// 	id: 5,
+		// 	title: "INNOSPARK 1.0",
+		// 	imageUrl: "/innospark_website.jpg",
+		// 	url: "https://innospark-2024.netlify.app/",
+		// 	description:
+		// 		"The INNOSPARK 1.0 website details a national-level hackathon organized by the Department of CSE at Madanapalle Institute of Technology & Science. It provides information on event schedules, registration process, prize details, and suggested problem statements, encouraging innovation and real-world problem-solving skills among participants.",
+		// 	buttonColor: "var(--primary-color)",
+		// 	borderColor: "var(--tertiary-color)",
+		// 	titleColor: "var(--primary-color)",
+		// 	buttonFontColor: "#00EAFA",
+		// 	fontColor: "#001136",
+		// },
 	];
 
 	const styles = {
