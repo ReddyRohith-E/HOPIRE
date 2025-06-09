@@ -16,9 +16,8 @@ const AboutUs = () => {
             <div className="about-us-container" ref={aboutUsRef}>
                 <div
                     id="who-we-are"
-                    className={`about-us-section ${
-                        aboutUsVisible ? "visible" : ""
-                    }`}
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""
+                        }`}
                 >
                     <div className="title">Who We Are</div>
                     <p>
@@ -41,17 +40,15 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div
-                    className={`about-us-image ${
-                        aboutUsVisible ? "visible" : ""
-                    }`}
+                    className={`about-us-image ${aboutUsVisible ? "visible" : ""
+                        }`}
                 >
                     <img src={aboutUsImage} alt="" />
                 </div>
                 <div
                     id="why-choose-us"
-                    className={`about-us-section ${
-                        aboutUsVisible ? "visible" : ""
-                    }`}
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""
+                        }`}
                 >
                     <div className="title">Why Choose Us</div>
                     <p>
@@ -63,12 +60,20 @@ const AboutUs = () => {
                         quality, efficiency, and innovation ensures that we
                         create digital experiences that truly stand out.
                     </p>
+                    <div className="button-container">
+                        <a
+                            href="./HopireTechSolutionsLLP-Terms&Conditions.pdf"
+                            // target="_blank"
+                            className="llp-button"
+                        >
+                            View Terms & Conditions
+                        </a>
+                    </div>
                 </div>
                 <div
                     id="vision"
-                    className={`about-us-section ${
-                        aboutUsVisible ? "visible" : ""
-                    }`}
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""
+                        }`}
                 >
                     <div className="title">Vision</div>
                     <p>
@@ -84,9 +89,8 @@ const AboutUs = () => {
                 </div>
                 <div
                     id="mission"
-                    className={`about-us-section ${
-                        aboutUsVisible ? "visible" : ""
-                    }`}
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""
+                        }`}
                 >
                     <div className="title">Mission</div>
                     <p>

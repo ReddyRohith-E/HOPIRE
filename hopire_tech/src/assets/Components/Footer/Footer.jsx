@@ -97,8 +97,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-
-				<div className="copyright">
+				<div className="footer-bottom">
 					<nav className="navigation">
 						<ul>
 							<li>
@@ -147,13 +146,24 @@ const Footer = () => {
 							</li>
 						</ul>
 					</nav>
-					<a
-						href="./FiLLiP_Approval Letter_M29636630.pdf"
-						target="_blank"
-					>
-						View LLP Approval Document
-					</a>
-					{/* <p>Copyright © 2025 • Hopire Tech Solutions LLP</p> */}
+					<div className="legal-links">
+						<a
+							href="./FiLLiP_Approval Letter_M29636630.pdf"
+							target="_blank"
+						>
+							View LLP Approval Document
+						</a>
+						<a
+							href="./HopireTechSolutionsLLP-Terms&Conditions.pdf"
+							target="_blank"
+						>
+							Terms & Conditions
+						</a>
+					</div>
+					{/* <p className="copyright-text">
+						&copy; {new Date().getFullYear()} Hopire Tech Solutions LLP. All
+						rights reserved.
+					</p> */}
 				</div>
 			</div>
 		</footer>
