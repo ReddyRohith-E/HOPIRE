@@ -66,7 +66,7 @@ const teamData = [
   {
     name: "Charitha",
     id: "7",
-    imagePath: "Charitha.jpg",
+    imagePath: "Charitha.jpeg",
     links: {
       linkedin: "https://www.linkedin.com/",
       github: "https://github.com/",
@@ -82,7 +82,7 @@ const Team = () => {
       <div className="row">
         {teamData.map(member => (
           <div key={member.id} className="profile-card">
-            <img src={member.imagePath ? member.imagePath : "/profile.jpeg"} alt={member.name} className="profile-pic" />
+            <img src={member.imagePath ? member.imagePath : "/profile.jpeg"} alt={member.name} className="profile-pic" style={member.name === "Charitha" ? { objectPosition: "top" } : {}} />
             <h3>{member.name}</h3>
             <div className="links">
               <a href={member.links.linkedin} target="_blank" rel="noopener noreferrer">
