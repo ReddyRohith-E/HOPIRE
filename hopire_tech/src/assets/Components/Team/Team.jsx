@@ -46,7 +46,7 @@ const teamData = [
   {
     name: "K. Naga Sai Karthik",
     id: "5",
-    imagePath: "Karthik.jpg",
+    imagePath: "Karthik.jpeg",
     links: {
       linkedin: "https://www.linkedin.com/in/nagasai-karthik-kanakagiri-91a221254",
       github: "https://github.com/Karthik70904",
