@@ -6,7 +6,7 @@ const teamData = [
   {
     name: "V. Mahesh Kumar",
     id: "1",
-    imagePath: "",
+    imagePath: "/Mahesh.png",
     links: {
       linkedin: "https://www.linkedin.com/in/mahesh-kumar-vaileti-b76295152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       github: "https://github.com/MaheshKumar1533",
@@ -16,7 +16,7 @@ const teamData = [
   {
     name: "V. Harshavardhan",
     id: "2",
-    imagePath: "",
+    imagePath: "Harsha.jpeg",
     links: {
       linkedin: "https://www.linkedin.com/in/harshavardhan1974?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       github: "https://github.com/HarshaVardhanRao",
@@ -26,7 +26,7 @@ const teamData = [
   {
     name: "E. Reddy Rohith",
     id: "3",
-    imagePath: "",
+    imagePath: "Rohith.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/reddy-rohith-enduluri-656000273/",
       github: "https://github.com/ReddyRohith-E",
@@ -36,7 +36,7 @@ const teamData = [
   {
     name: "T. Meghana",
     id: "4",
-    imagePath: "",
+    imagePath: "Meghana.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/meghana-timmampalli-21abb8272?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMTRk4FfXQ9%2BJO%2Fi8tvYJKA%3D%3D",
       github: "https://github.com/Meghana3015",
@@ -46,7 +46,7 @@ const teamData = [
   {
     name: "K. Naga Sai Karthik",
     id: "5",
-    imagePath: "",
+    imagePath: "Karthik.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/nagasai-karthik-kanakagiri-91a221254",
       github: "https://github.com/Karthik70904",
@@ -56,7 +56,7 @@ const teamData = [
   {
     name: "M. Keerthana Evanjilin",
     id: "6",
-    imagePath: "",
+    imagePath: "Keerthana.jpg",
     links: {
       linkedin: "",
       github: "https://github.com/KeerthanaSudhakar",
@@ -66,7 +66,7 @@ const teamData = [
   {
     name: "Charitha",
     id: "7",
-    imagePath: "",
+    imagePath: "Charitha.jpg",
     links: {
       linkedin: "https://www.linkedin.com/",
       github: "https://github.com/",
