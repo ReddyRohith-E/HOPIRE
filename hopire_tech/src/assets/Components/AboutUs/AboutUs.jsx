@@ -23,7 +23,7 @@ const AboutUs = () => {
                     <p>
                         HOPIRE TECH SOLUTIONS is a student-led digital
                         consultancy turning ideas into impactful web solutions.
-                        Our team specializes in website development, UI/UX
+                        <a href="/team">Our team</a> specializes in website development, UI/UX
                         design, and web applications, crafting seamless and
                         visually striking digital experiences. With successful
                         projects we help businesses, startups, and institutions

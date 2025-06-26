@@ -10,7 +10,7 @@ const teamData = [
     links: {
       linkedin: "https://www.linkedin.com/in/mahesh-kumar-vaileti-b76295152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       github: "https://github.com/MaheshKumar1533",
-      portfolio: "#"
+      portfolio: "https://vailetimaheshkumar.me/"
     }
   },
   {
@@ -82,7 +82,7 @@ const Team = () => {
       <div className="row">
         {teamData.map(member => (
           <div key={member.id} className="profile-card">
-            <img src={member.imagePath} alt={member.name} className="profile-pic" />
+            <img src={member.imagePath ? member.imagePath : "/profile.jpeg"} alt={member.name} className="profile-pic" />
             <h3>{member.name}</h3>
             <div className="links">
               <a href={member.links.linkedin} target="_blank" rel="noopener noreferrer">
