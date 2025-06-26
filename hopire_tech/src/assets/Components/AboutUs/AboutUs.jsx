@@ -72,8 +72,7 @@ const AboutUs = () => {
                 </div>
                 <div
                     id="vision"
-                    className={`about-us-section ${aboutUsVisible ? "visible" : ""
-                        }`}
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""}`}
                 >
                     <div className="title">Vision</div>
                     <p>
@@ -89,8 +88,7 @@ const AboutUs = () => {
                 </div>
                 <div
                     id="mission"
-                    className={`about-us-section ${aboutUsVisible ? "visible" : ""
-                        }`}
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""}`}
                 >
                     <div className="title">Mission</div>
                     <p>
@@ -102,6 +100,15 @@ const AboutUs = () => {
                         overall user experience. We strive to empower young
                         talent, nurture innovation, and build impactful digital
                         solutions that drive success.
+                    </p>
+                </div>
+                <div
+                    id="internship-experience"
+                    className={`about-us-section ${aboutUsVisible ? "visible" : ""}`}
+                >
+                    <div className="title">Focused Collaboration</div>
+                    <p>
+                        At Hopire, our Focused Collaboration model immerses people directly in client engagements, pairing them with seasoned professionals to tackle real business challenges. This approach delivers hands-on, practical exposure at every step—participants work on live projects, leverage cutting-edge tools, and contribute meaningfully to outcomes. Clients benefit from fresh insights and dedicated support, while everyone involved builds industry-relevant skills, confidence, and a portfolio of measurable successes.
                     </p>
                 </div>
             </div>

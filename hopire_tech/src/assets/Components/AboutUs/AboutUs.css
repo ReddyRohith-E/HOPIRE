@@ -17,8 +17,8 @@
 	padding: 2rem;
 	gap: 2rem;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: auto auto;
-	grid-template-areas: "wwa wwa im im wcu wcu" "vision vision vision mission mission mission";
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "wwa wwa im im wcu wcu" "internship internship internship internship internship internship" "vision vision vision mission mission mission";
 }
 
 .about-us-section {
@@ -120,6 +120,10 @@
 
 #mission.visible {
 	animation: moveBottomRight 1s forwards;
+}
+
+#internship-experience {
+	grid-area: internship;
 }
 
 .about-us-section p {
