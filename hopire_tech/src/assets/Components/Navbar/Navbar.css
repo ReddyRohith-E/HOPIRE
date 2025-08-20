@@ -57,8 +57,10 @@
     text-underline-offset: 4px;
 }
 
-.navbar ul li.active a {
+.navbar ul li.active a,
+.navbar ul li a.active {
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
 /* Hamburger */

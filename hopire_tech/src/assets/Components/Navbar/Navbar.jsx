@@ -17,24 +17,32 @@ const Navbar = () => {
 		setScrollPosition(window.scrollY);
 	};
 
+	const handleSetActive = (to) => {
+		setActiveSection(to);
+	};
+
 	useEffect(() => {
-		Events.scrollEvent.register("begin", function (to, element) {
-			setActiveSection(to);
-		});
+		// Register scroll events
+		Events.scrollEvent.register("begin", handleSetActive);
+		Events.scrollEvent.register("end", handleSetActive);
 
-		Events.scrollEvent.register("end", function (to, element) {
-			setActiveSection(to);
-		});
-
+		// Initialize scrollSpy
 		scrollSpy.update();
 
+		// Add scroll listener for navbar transparency
 		window.addEventListener("scroll", handleScroll);
 
+		// Cleanup
 		return () => {
 			Events.scrollEvent.remove("begin");
 			Events.scrollEvent.remove("end");
 			window.removeEventListener("scroll", handleScroll);
 		};
+	}, []);
+
+	// Update scroll spy when component mounts
+	useEffect(() => {
+		scrollSpy.update();
 	}, []);
 
 	const navbarOpacity = Math.max(1 - scrollPosition / 300, 0.7);
@@ -63,6 +71,8 @@ const Navbar = () => {
 							duration={300}
 							offset={-80}
 							spy={true}
+							activeClass="active"
+							onSetActive={handleSetActive}
 							onClick={() => setIsOpen(false)}
 						>
 							Home
@@ -75,6 +85,8 @@ const Navbar = () => {
 							duration={300}
 							offset={-80}
 							spy={true}
+							activeClass="active"
+							onSetActive={handleSetActive}
 							onClick={() => setIsOpen(false)}
 						>
 							About Us
@@ -89,6 +101,8 @@ const Navbar = () => {
 							duration={300}
 							offset={-80}
 							spy={true}
+							activeClass="active"
+							onSetActive={handleSetActive}
 							onClick={() => setIsOpen(false)}
 						>
 							Services
@@ -105,6 +119,8 @@ const Navbar = () => {
 							duration={300}
 							offset={-80}
 							spy={true}
+							activeClass="active"
+							onSetActive={handleSetActive}
 							onClick={() => setIsOpen(false)}
 						>
 							Portfolio
@@ -117,6 +133,8 @@ const Navbar = () => {
 							duration={300}
 							offset={-80}
 							spy={true}
+							activeClass="active"
+							onSetActive={handleSetActive}
 							onClick={() => setIsOpen(false)}
 						>
 							Contact Us
