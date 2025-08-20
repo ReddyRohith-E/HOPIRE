@@ -34,6 +34,12 @@ const ClientTestimonials = () => {
       name: 'MITS College',
       content: 'We are extremely pleased with the services provided by the startup founded by our students. Their innovative solutions and dedication have significantly improved our operational efficiency. We highly recommend their services to others looking for reliable and effective solutions.',
       date: 'February 22, 2025'
+    },
+    {
+      id: 4,
+      name: 'Emofelix',
+      content: 'Hopire Tech transformed our vision into reality with their AI expertise. They delivered a compassionate platform that connects people emotionally with loved ones, perfectly understanding our mission to provide comfort and reduce loneliness.',
+      date: 'Aug 20, 2025'
     }
   ];
 

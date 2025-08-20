@@ -57,19 +57,32 @@ const Portfolio = () => {
 			buttonFontColor: "#00EAFA",
 			fontColor: "#001136",
 		},
-		// {
-		// 	id: 5,
-		// 	title: "INNOSPARK 1.0",
-		// 	imageUrl: "/innospark_website.jpg",
-		// 	url: "https://innospark-2024.netlify.app/",
-		// 	description:
-		// 		"The INNOSPARK 1.0 website details a national-level hackathon organized by the Department of CSE at Madanapalle Institute of Technology & Science. It provides information on event schedules, registration process, prize details, and suggested problem statements, encouraging innovation and real-world problem-solving skills among participants.",
-		// 	buttonColor: "var(--primary-color)",
-		// 	borderColor: "var(--tertiary-color)",
-		// 	titleColor: "var(--primary-color)",
-		// 	buttonFontColor: "#00EAFA",
-		// 	fontColor: "#001136",
-		// },
+		{
+			id: 5,
+			title: "INNOSPARK 1.0",
+			imageUrl: "/innospark_website.jpg",
+			url: "https://innospark-2024.netlify.app/",
+			description:
+				"The INNOSPARK 1.0 website details a national-level hackathon organized by the Department of CSE at Madanapalle Institute of Technology & Science. It provides information on event schedules, registration process, prize details, and suggested problem statements, encouraging innovation and real-world problem-solving skills among participants.",
+			buttonColor: "var(--primary-color)",
+			borderColor: "var(--tertiary-color)",
+			titleColor: "var(--primary-color)",
+			buttonFontColor: "#00EAFA",
+			fontColor: "#001136",
+		},
+		{
+			id: 6,
+			title: "Emofelix",
+			imageUrl: "/emofelix_website.png",
+			url: "https://emofelix.in",
+			description:
+				"Emofelix is a heartfelt digital platform that helps users reconnect emotionally by creating AI companions modeled after loved ones parents, friends, or grandparents. Through healing conversations and memory-sharing, it offers comfort, emotional support, and a sense of presence. Emofelix empowers users to feel less lonely, more understood, and emotionally uplifted anytime, anywhere.",
+			buttonColor: "var(--secondary-color)",
+			borderColor: "var(--quaternary-color)",
+			titleColor: "var(--secondary-color)",
+			buttonFontColor: "#001136",
+			fontColor: "#ffffff",
+		},
 	];
 
 	const styles = {
