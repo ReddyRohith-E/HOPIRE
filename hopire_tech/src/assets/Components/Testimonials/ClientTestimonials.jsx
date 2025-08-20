@@ -19,27 +19,27 @@ const ClientTestimonials = () => {
   const testimonials = [
     {
       id: 1,
+      name: 'Emofelix',
+      content: 'Hopire Tech transformed our vision into reality with their AI expertise. They delivered a compassionate platform that connects people emotionally with loved ones, perfectly understanding our mission to provide comfort and reduce loneliness.',
+      date: 'Aug 20, 2025'
+    },
+    {
+      id: 2,
       name: 'Green Valley School',
       content: 'Hopire Tech delivered a seamless digital platform for our school. Their team was responsive, innovative, and ensured our needs were met at every stage. The new portal has made communication and management much easier for staff and parents alike.',
       date: 'April 10, 2025'
     },
     {
-      id: 2,
+      id: 3,
       name: 'MITS Foundation',
       content: 'We appreciate the professionalism and creativity of the Hopire team. Their solutions have helped us reach a wider audience and manage our foundation activities more efficiently. Highly recommended for any organization looking for reliable tech partners.',
       date: 'March 18, 2025'
     },
     {
-      id: 3,
+      id: 4,
       name: 'MITS College',
       content: 'We are extremely pleased with the services provided by the startup founded by our students. Their innovative solutions and dedication have significantly improved our operational efficiency. We highly recommend their services to others looking for reliable and effective solutions.',
       date: 'February 22, 2025'
-    },
-    {
-      id: 4,
-      name: 'Emofelix',
-      content: 'Hopire Tech transformed our vision into reality with their AI expertise. They delivered a compassionate platform that connects people emotionally with loved ones, perfectly understanding our mission to provide comfort and reduce loneliness.',
-      date: 'Aug 20, 2025'
     }
   ];
 
