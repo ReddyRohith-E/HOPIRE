@@ -75,6 +75,39 @@ const teamData = [
   }
 ];
 
+const internsData = [
+  {
+    name: "Atakari Vindhya",
+    id: "2",
+    imagePath: "profile.jpeg",
+    links: {
+      linkedin: "#",
+      github: "#",
+      portfolio: "#"
+    }
+  },
+  {
+    name: "Purum Vamsi Prasad",
+    id: "1",
+    imagePath: "profile.jpeg", 
+    links: {
+      linkedin: "#",
+      github: "#",
+      portfolio: "#"
+    }
+  },
+  {
+    name: "Veeksha Sri Pulluru Mohan",
+    id: "3",
+    imagePath: "profile.jpeg", // Placeholder image
+    links: {
+      linkedin: "#",
+      github: "#",
+      portfolio: "#"
+    }
+  }
+];
+
 const Team = () => {
   return (
     <div className="team">
@@ -83,6 +116,27 @@ const Team = () => {
         {teamData.map(member => (
           <div key={member.id} className="profile-card">
             <img src={member.imagePath ? member.imagePath : "/profile.jpeg"} alt={member.name} className="profile-pic" style={member.name === "Charitha" ? { objectPosition: "top" } : {}} />
+            <h3>{member.name}</h3>
+            <div className="links">
+              <a href={member.links.linkedin} target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+              <a href={member.links.github} target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a href={member.links.portfolio} target="_blank" rel="noopener noreferrer">
+                <FaGlobe />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h2 className="heading" style={{ marginTop: '4rem' }}>Interns</h2>
+      <div className="row">
+        {internsData.map(member => (
+          <div key={member.id} className="profile-card">
+            <img src={member.imagePath ? member.imagePath : "profile.jpeg"} alt={member.name} className="profile-pic" />
             <h3>{member.name}</h3>
             <div className="links">
               <a href={member.links.linkedin} target="_blank" rel="noopener noreferrer">
