@@ -143,7 +143,7 @@ The website is fully responsive and optimized for:
 ## 📞 Contact
 
 **Hopire Tech Solutions**
-- Website: [hopire.tech](https://hopire.tech)
+- Website: [hopire.tech](https://hopire-tech.netlify.app/)
 - Email: Contact through the website form
 - GitHub: [@ReddyRohith-E](https://github.com/ReddyRohith-E)
 
